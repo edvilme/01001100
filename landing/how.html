@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BOLO GO</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <style>
+            html{
+                color:#000;
+                font-family: 'Montserrat';
+                font-size: 22px;
+            }
+
+            p.title{
+                color:#d7007e;
+            }
+            p.foot{
+                color:#000000;
+                font-size: 15px; 
+            }
+            /* CSS GRID */ 
+            .wrapper{
+                display:grid; 
+                grid-template-columns: repeat(auto,auto); 
+                grid-template-rows: repeat(auto,auto); 
+                grid-gap: 10px; 
+            }
+            .header{
+                grid-column: 1/ 4;
+                grid-row: 1 / 2;
+                text-align: center; 
+            }
+            .ar{
+                grid-column: 1/ 4;
+                grid-row: 2 / 3;
+                text-align: center; 
+            }
+            .sections{
+                grid-column: 1/ 4;
+                grid-row: 3 / 4;
+                text-align: center; 
+            }
+            .option1{
+                grid-column: 1/ 2;
+                grid-row: 4 / 5;
+                text-align: center; 
+            }
+            .option2{
+                grid-column: 2/ 3;
+                grid-row: 4 / 5;
+                text-align: center; 
+            }
+            .option3{
+                grid-column: 3/ 4;
+                grid-row: 4 / 5;
+                text-align: center; 
+            }
+            .footer{
+                grid-column: 1/ 5;
+                grid-row: 5 / 6;
+                text-align: center; 
+                background-color: rgba(255, 255, 255, 0.171); 
+
+            } 
+        </style>
+    </head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <p class="title">
+                ¿Cómo funciona?
+            </p>
+        </div>
+        <div class="ar">
+                <p>La magia de Bolo Go es posible gracias a la realidad aumentada</p>
+                <img src="liverpoolar.PNG">
+                <p>Ésta permite visualizar a Bolo dentro de la tienda, a través de la cámara de tu celular</p>
+        </div>
+        <div class="sections">
+                <p class="title">
+                    ¿Qué puedo hacer con Bolo GO?
+                </p>
+        </div>
+        <div class="option1">
+            <img src="1.png" height="400">
+        </div>
+        <div class="option2">
+                <img src="2.png" height="400">
+            </div>
+            <div class="option3">
+                    <img src="3.png" height="400">
+                </div>
+        <div class="footer">
+            <p class="foot">Lourdes Badillo, Luis Fernández y Eduardo Villalpando en colaboración con Liverpool</p>
+                
+        </div>
+    </div>
+
+</body>
+</html>

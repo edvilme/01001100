@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BOLO GO</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <style>
+            html{
+                color:#000;
+                font-family: 'Montserrat';
+                font-size: 22px;
+                font-weight: bold;
+            }
 
+            p.subtitle{
+                color:#d7007e;
+            }
+            p.foot{
+                color:#050505;
+                font-size: 15px; 
+            }
+            a:link {
+                color: rgb(255, 0, 119); 
+                background-color: transparent; 
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: #ff56b8;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: rgb(179, 45, 172);
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            #apps {
+                height: 70px;
+            }
+
+            #apps:hover {
+                content: url(appswhite.svg);
+                height: 70px;
+            }
+
+            /* CSS GRID */ 
+            .wrapper{
+                display:grid; 
+                grid-template-columns: repeat(2, 1 fr); 
+                grid-template-rows: auto 600px auto; 
+                grid-gap: 10px;
+                background-image: url(bg.jpg);  
+                
+            }
+            .header{
+                grid-column: 1/ 2;
+                grid-row: 1 / 2;
+                text-align: center; 
+            }
+            .menu{
+                grid-column: 2/ 3;
+                grid-row: 1 / 2;
+                text-align: center; 
+            }
+            .body{
+                grid-column: 1/ 3;
+                grid-row: 2 / 3;
+                text-align: center;
+                display:grid; 
+                grid-template-columns: repeat(2, 1 fr); 
+                grid-template-rows: repeat(2, 1 fr); 
+                grid-gap: 10px;
+            }
+            .video{
+                grid-column: 1/ 2;
+                grid-row: 1 / 3;
+                text-align: center; 
+            }
+            .sub{
+                grid-column: 2/ 3;
+                grid-row: 1 / 2;
+                text-align: center; 
+            }
+            .download{
+                grid-column: 2/ 3;
+                grid-row: 2 / 3;
+                text-align: center; 
+            }
+            .footer{
+                grid-column: 1/ 3;
+                grid-row: 3 / 4;
+                text-align: center; 
+                background-color: rgba(255, 255, 255, 0.651); 
+
+            } 
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                list-style-type: none;
+            }
+            img.ph {
+                border-radius: 8%;
+             }
+        </style>
+    </head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="bolo-go.png" height="100">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="how.html">¿Cómo funciona?</a></li>
+            </ul>
+        </div>
+        <div class="body">
+            <div class="video" >
+                <img src="phone.gif" height="500" class="ph">
+            </div>
+            <div class="sub">
+                <p class="subtitle"> 
+                    ¡Haz de comprar una experiencia inolvidable!
+                 </p>
+            </div>
+            <div class="download">
+               <a href=""> <img id="apps" src="appsblack.svg"> </a>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="foot">Lourdes Badillo, Luis Fernández y Eduardo Villalpando en colaboración con Liverpool</p>
+                
+        </div>
+    </div>
+
+</body>
+</html>
